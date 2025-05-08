@@ -42,18 +42,17 @@ body{
 
 }
 
-#nao{
-   background-color: #FF69B4; 
-   color:white;
+#nao {
+    position: absolute; /* Adiciona posição absoluta no CSS */
+    background-color: #FF69B4; 
+    color: white;
     border: none;
     padding: 20px;
     width: 100px;
-    font-size:20px;
+    font-size: 20px;
     font-family: 'Comic Sans MS', cursive, sans-serif;
     border-radius: 10px;
     cursor: pointer;
-   
-
 }
 
 #sim:hover{
@@ -63,12 +62,15 @@ body{
 }
 
 
-</style
+</style>
 
 <body>
-a
+
+   
+
     <h1>Quer casar comigo?</h1>
 <div class="area">
+    a
     <a href="sim.html"><button id="sim">Sim</button></a>
     <button id="nao"> Não</button>
     
@@ -76,4 +78,22 @@ a
     
     
 </body>
+ <script>
+    const buttonNao = document.getElementById('nao');
+    buttonNao.addEventListener('mouseover', setPosition); // Troquei para 'mouseover' para maior interatividade
+
+    function setPosition() {
+        // Obtém a largura e altura da janela
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+
+        // Gera posições aleatórias dentro dos limites da janela
+        const x = Math.random() * (windowWidth - buttonNao.offsetWidth);
+        const y = Math.random() * (windowHeight - buttonNao.offsetHeight);
+
+        // Define a posição do botão "Não"
+        buttonNao.style.left = x + 'px';
+        buttonNao.style.top = y + 'px';
+    }
+</script>
 </html>
