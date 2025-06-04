@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Basic HTML Form</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-list-item"> <a href="">Home</a>
+            <li class="nav-list-item"> <a href="">Gêneros</a>
+            <li class="nav-list-item"> <a href="">Autores</a>
+                
+        </ul>
+    </nav>
+    <div class="apresentacao">
+        <h1>Bibliotec</h1>
+        <p>Bibliotec é uma biblioteca digital que oferece uma ampla gama de livros e recursos para leitores de todas as idades.</p>
+        <div class="container">  
+            
+            <h1> Compartilhe seu livro!</h1>
+            <form action="/submit" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+        
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br><br>
+        
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
+        
+                <label for="subscribe">S:</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <br><br>
+        
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+       
+    </div>
+</body>
+</html>
