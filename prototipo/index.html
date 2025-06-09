@@ -8,10 +8,7 @@
     
 </head>
 <style>
-    .bloco1 p{
-        width: 400px;
-        text-align: justify;
-    }
+   
 </style>
 <body>
     <nav class="navbar">
@@ -50,12 +47,8 @@
 
     <div class="bloco1">
         <h1 class="titulo">Bibliotec</h1>
-        <p class="">Bibliotec é uma biblioteca digital que oferece uma ampla gama de livros e recursos para leitores de todas as idades.</p>
-       <!--<div class="fotos-area">
-
-            <img src="./src/img/criancasLivros.jpg" alt="Imagem de um livro" class="foto-livro" id="criancasLivros">
-
-        </div>--> 
+        <br> <br>
+        <p id="typewriter-text"></p>
     </div>
     <div class="apresentacao">
        
@@ -64,5 +57,19 @@
         
        
     </div>
+    <script>
+const texto = "Bibliotec é uma biblioteca digital que oferece uma ampla gama de livros e recursos para leitores de todas as idades.";
+const elemento = document.getElementById("typewriter-text");
+let i = 0;
+
+function digitar() {
+    if (i < texto.length) {
+        elemento.innerHTML += texto.charAt(i);
+        i++;
+        setTimeout(digitar, 35); // velocidade da digitação
+    }
+}
+window.onload = digitar;
+</script>
 </body>
 </html>

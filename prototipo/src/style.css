@@ -43,6 +43,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 40px ;
     
 background: linear-gradient(180deg, rgba(57, 59, 181, 1) 0%, var(--cor-fundo) 76%);
 }
@@ -51,6 +52,8 @@ background: linear-gradient(180deg, rgba(57, 59, 181, 1) 0%, var(--cor-fundo) 76
     color: var(--cor-texto-navbar);
     font-size: 25px;
     margin-bottom: 20px;
+    width: 500px;
+    text-align: center;
 }
 
 .apresentacao{
@@ -388,8 +391,10 @@ background: linear-gradient(180deg, rgba(57, 59, 181, 1) 0%, var(--cor-fundo) 76
 .content-above{
     min-width: 1188px;
 background-color: #efeef3 ;
+padding: 30px;
 }
 
+/**/
 .com{
     background-color: ;
 }
